@@ -1,0 +1,16 @@
+.mapa-marcadores{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    position: fixed;
+    top: 5%;
+    right: 3%;
+    z-index: 9999;
+}
+
+li{
+    cursor: pointer;
+    text-align: center;
+}

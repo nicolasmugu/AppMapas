@@ -1,0 +1,16 @@
+<div class="mapa-zoom" #mapa></div>
+
+<div class="row">
+
+    <div class="col-12"><hr>
+        <label class="form-label">Zoom: {{nivelZoom | number:'2.0-2'}} </label><br>
+        <label class="form-label">Coordenadas: [ {{centro[0] | number:'2.0-3'}}, {{centro[1] | number:'2.0-3'}} ] </label>
+        <input type="range" class="form-range" [value]="nivelZoom" step="0.1" min="13" max="18" (input)="cambio(barra.value)" #barra>
+    </div>
+
+    <div class="col-12">
+        <button (click)="alejar()" class="btn btn-primary col-2 offset-3"><strong>-</strong></button>
+        <button (click)="acercar()" class="btn btn-primary col-2 offset-2"><strong>+</strong></button>
+    </div><br><br>
+
+</div>
